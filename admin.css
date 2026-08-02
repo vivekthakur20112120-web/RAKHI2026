@@ -1,0 +1,302 @@
+/* ==========================
+        GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* ==========================
+        BODY
+========================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+
+body{
+
+    display:flex;
+
+    background:#10131a;
+
+    color:white;
+
+    min-height:100vh;
+
+}
+
+/* ==========================
+        SIDEBAR
+========================== */
+
+.sidebar{
+
+    width:250px;
+
+    background:#181c25;
+
+    padding:30px 20px;
+
+    box-shadow:5px 0 15px rgba(0,0,0,.4);
+
+}
+
+.sidebar h1{
+
+    text-align:center;
+
+    color:#ff5aa5;
+
+    margin-bottom:40px;
+
+}
+
+.sidebar button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin:12px 0;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#262c39;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.sidebar button:hover{
+
+    background:#ff5aa5;
+
+    transform:translateX(8px);
+
+}
+
+/* ==========================
+        MAIN
+========================== */
+
+.main{
+
+    flex:1;
+
+    padding:35px;
+
+}
+
+.main h1{
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================
+        DASHBOARD CARDS
+========================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+.card{
+
+    background:#1d2230;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 20px hotpink;
+
+}
+
+.card h2{
+
+    color:#cccccc;
+
+    font-size:18px;
+
+}
+
+.card h1{
+
+    margin-top:15px;
+
+    color:#ff5aa5;
+
+    font-size:42px;
+
+}
+
+/* ==========================
+        SEARCH BOX
+========================== */
+
+#searchBox{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#262c39;
+
+    color:white;
+
+    font-size:17px;
+
+    margin-bottom:30px;
+
+    outline:none;
+
+}
+
+#searchBox:focus{
+
+    box-shadow:0 0 15px hotpink;
+
+}
+
+/* ==========================
+      FEEDBACK CONTAINER
+========================== */
+
+#feedbackContainer{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+/* ==========================
+      FEEDBACK CARD
+========================== */
+
+.feedbackCard{
+
+    background:#1d2230;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 15px rgba(0,0,0,.3);
+
+    transition:.3s;
+
+}
+
+.feedbackCard:hover{
+
+    transform:scale(1.02);
+
+    box-shadow:0 0 20px #ff5aa5;
+
+}
+
+.feedbackCard h2{
+
+    color:#ff5aa5;
+
+    margin-bottom:10px;
+
+}
+
+.feedbackCard p{
+
+    color:#dddddd;
+
+    margin:8px 0;
+
+}
+
+.feedbackCard button{
+
+    margin-top:15px;
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ff3b3b;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.feedbackCard button:hover{
+
+    background:red;
+
+}
+
+/* ==========================
+        SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff5aa5;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#181c25;
+
+}
